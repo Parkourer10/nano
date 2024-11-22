@@ -29,7 +29,7 @@ warmup_iters = 1000
 
 device = 'cuda'
 dtype = 'float16'
-compile = True
+compile = False
 
 use_checkpoint = True  
 empty_cache = True     
