@@ -1,14 +1,11 @@
-
 out_dir = 'out-tinystories'
 eval_interval = 1000 
-eval_iters = 50  # Reduced from 100 to save memory during evaluation
+eval_iters = 50 
 log_interval = 10 
 always_save_checkpoint = False 
-
 wandb_log = False
 wandb_project = 'tinystories'
 wandb_run_name = 'tinystories'
-
 dataset = 'tinystories'
 gradient_accumulation_steps = 8  
 batch_size = 32 
@@ -18,15 +15,13 @@ n_head = 6
 n_embd = 384
 dropout = 0.2
 learning_rate = 5e-4
-max_iters = 50000
-lr_decay_iters = 50000
+max_iters = 20000
+lr_decay_iters = 20000
 min_lr = 3e-5 
 beta2 = 0.95 
 warmup_iters = 1000 
-
 device = 'cuda'
 dtype = 'float16'
 compile = False #(tesla t4 gpus :( )
-
 use_checkpoint = True  
 empty_cache = True     
