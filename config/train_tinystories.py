@@ -16,15 +16,14 @@ gradient_accumulation_steps = 4
 batch_size = 64
 block_size = 512 
 
-n_layer = 12
-n_head = 12
-n_embd = 768  # d_model
-dropout = 0.1 
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
 
-# Training parameters
-learning_rate = 3e-4 
+learning_rate = 1e-3 
 max_iters = 10000  
-lr_decay_iters = 50000
+lr_decay_iters = 10000
 min_lr = 3e-5 
 beta2 = 0.95 
 warmup_iters = 1000 
