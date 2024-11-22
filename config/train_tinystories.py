@@ -1,33 +1,35 @@
-# Configuration for 22M parameter TinyStories model
+
 out_dir = 'out-tinystories'
 eval_interval = 1000 
-eval_iters = 100
-log_interval = 100 
-always_save_checkpoint = True 
+eval_iters = 50  # Reduced from 100 to save memory during evaluation
+log_interval = 10 
+always_save_checkpoint = False 
 
 # Weights & Biases logging
 wandb_log = False
-wandb_project = 'tinystories-22m'
-wandb_run_name = 'gpt-22m'
+wandb_project = 'tinystories'
+wandb_run_name = 'tinystories'
 
 # Dataset config
 dataset = 'tinystories'
-gradient_accumulation_steps = 4 
-batch_size = 64
-block_size = 512 
-
+gradient_accumulation_steps = 8  
+batch_size = 32  
+block_size = 256 
 n_layer = 6
 n_head = 6
 n_embd = 384
 dropout = 0.2
 
 learning_rate = 1e-3 
-max_iters = 10000  
+max_iters = 10000
 lr_decay_iters = 10000
 min_lr = 3e-5 
 beta2 = 0.95 
 warmup_iters = 1000 
 
 device = 'cuda'
-dtype = 'float16'  
-compile = False    
+dtype = 'float16'
+compile = True
+
+use_checkpoint = True  
+empty_cache = True     
