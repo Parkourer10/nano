@@ -21,8 +21,8 @@ n_embd = 384
 dropout = 0.2
 
 learning_rate = 1e-3 
-max_iters = 10000
-lr_decay_iters = 10000
+max_iters = 50000
+lr_decay_iters = 50000
 min_lr = 3e-5 
 beta2 = 0.95 
 warmup_iters = 1000 
