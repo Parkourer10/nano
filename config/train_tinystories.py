@@ -13,7 +13,7 @@ wandb_run_name = 'tinystories'
 # Dataset config
 dataset = 'tinystories'
 gradient_accumulation_steps = 8  
-batch_size = 128  
+batch_size = 64 
 block_size = 256 
 n_layer = 6
 n_head = 6
