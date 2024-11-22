@@ -13,7 +13,7 @@ wandb_run_name = 'tinystories'
 # Dataset config
 dataset = 'tinystories'
 gradient_accumulation_steps = 8  
-batch_size = 32  
+batch_size = 128  
 block_size = 256 
 n_layer = 6
 n_head = 6
@@ -21,8 +21,8 @@ n_embd = 384
 dropout = 0.2
 
 learning_rate = 1e-3 
-max_iters = 10000
-lr_decay_iters = 10000
+max_iters = 50000
+lr_decay_iters = 50000
 min_lr = 3e-5 
 beta2 = 0.95 
 warmup_iters = 1000 
