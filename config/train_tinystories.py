@@ -5,12 +5,10 @@ eval_iters = 50  # Reduced from 100 to save memory during evaluation
 log_interval = 10 
 always_save_checkpoint = False 
 
-# Weights & Biases logging
 wandb_log = False
 wandb_project = 'tinystories'
 wandb_run_name = 'tinystories'
 
-# Dataset config
 dataset = 'tinystories'
 gradient_accumulation_steps = 8  
 batch_size = 32 
@@ -19,8 +17,7 @@ n_layer = 6
 n_head = 6
 n_embd = 384
 dropout = 0.2
-
-learning_rate = 1e-3 
+learning_rate = 5e-4
 max_iters = 50000
 lr_decay_iters = 50000
 min_lr = 3e-5 
