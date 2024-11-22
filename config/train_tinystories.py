@@ -13,7 +13,7 @@ wandb_run_name = 'gpt-22m'
 # Dataset config
 dataset = 'tinystories'
 gradient_accumulation_steps = 4 
-batch_size = 128  # reduced from 128 for T4 memory
+batch_size = 64
 block_size = 512 
 
 n_layer = 12
